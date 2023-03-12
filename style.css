@@ -11,3 +11,39 @@ body {
   padding-bottom: 30px;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+svg {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px;
+  opacity: 0;
+}
+
+svg line {
+  stroke: black;
+  stroke-width: 20;
+}
+
+.container {
+  background: bisque;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 50px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.element {
+  min-height: 50px;
+  cursor: pointer;
+}
+
+.container div > * {
+  cursor: inherit;
+}
