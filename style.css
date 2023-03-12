@@ -47,3 +47,66 @@ svg line {
 .container div > * {
   cursor: inherit;
 }
+
+label > img, input:not(:checked) + label > img {
+  width: 0px;
+  height: 0px;
+  border: 1px solid white;
+}
+
+.container:hover svg {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.container:hover .element__text, input:checked + label > span > span {
+  color: black;
+  transition: color 0.5s;
+}
+
+.element:hover {
+  transition: height 1s;
+}
+
+.element:hover > label > img,
+input:checked + label > img {
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: width 0.5s;
+  margin: 25px auto 30px auto;
+}
+
+.element:hover svg {
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.container label {
+  margin-left: 30px;
+}
+
+.element__text {
+  font-size: 2.5rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.element__header {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.line {
+  background: gray;
+  width: 100%;
+  display: block;
+  height: 2px;
+}
