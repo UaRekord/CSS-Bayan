@@ -110,3 +110,42 @@ input:checked + label > img {
   display: block;
   height: 2px;
 }
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.lastblock {
+  display: block;
+  height: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .element__text {
+    font-size: 1.5rem;
+  }
+  svg {
+    width: 12px;
+  }
+
+  svg line {
+    stroke-width: 12;
+  }
+  .header {
+    margin: 20px 0;
+  }
+}
